@@ -1,5 +1,6 @@
 package fr.lmf.testmodfabric;
 
+import fr.lmf.testmodfabric.utils.TestGameRules;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -22,6 +23,9 @@ public class Main implements ModInitializer {
 		BASIC_ITEM = Registry.register(Registry.ITEM, new Identifier(MODID, "basic_item"), new Item(new Item.Settings().maxCount(32).group(ItemGroup.MISC)));
 		BASIC_BLOCK = Registry.register(Registry.BLOCK, new Identifier(MODID, "basic_block"), new Block(AbstractBlock.Settings.of(Material.STONE, MaterialColor.STONE).strength(2.0f, 2.0f)));
 		Registry.register(Registry.ITEM, new Identifier(MODID, "basic_block"), new BlockItem(BASIC_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
+
+		TestGameRules gamerules = new TestGameRules();
+
 	}
 
 
