@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "testmod_fabric:block/basic_block"
+    }
+  }
+}
