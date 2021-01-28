@@ -3,8 +3,8 @@ package fr.lmf.testmodfabric.init;
 import fr.lmf.testmodfabric.Main;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.MapColor;
 import net.minecraft.block.Material;
-import net.minecraft.block.MaterialColor;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -15,7 +15,7 @@ public class ModBlocks {
 
     public static final ModBlocks INSTANCE = new ModBlocks();
 
-    private Block BASIC_BLOCK = new Block(AbstractBlock.Settings.of(Material.STONE, MaterialColor.STONE).strength(2.0f, 2.0f));
+    private Block BASIC_BLOCK = new Block(AbstractBlock.Settings.of(Material.STONE, MapColor.STONE_GRAY).strength(2.0f, 2.0f));
 
     public void registerBlocks()
     {
