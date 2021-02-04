@@ -14,7 +14,7 @@ public class Main implements ModInitializer {
 		ModItems.INSTANCE.registerItems();
 		ModBlocks.INSTANCE.registerBlocks();
 
-		TestGameRules gamerules = new TestGameRules();
+		TestGameRules.init();
 
 	}
 

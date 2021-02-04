@@ -16,4 +16,6 @@ public class TestGameRules {
 
     public static final GameRules.Key<GameRules.IntRule> TEST_GAMERULE = GameRuleRegistry.register("test_gamerule", TEST_CATEGORY, GameRuleFactory.createIntRule(9, 0));
 
+    public static void init (){}
+
 }
